@@ -1,5 +1,6 @@
 <script setup>
 import AppLayout from '@/components/layout/AppLayout.vue'
+import RegisterForm from '@/components/auth/RegisterForm.vue'
 </script>
 
 <template>
@@ -15,30 +16,9 @@ import AppLayout from '@/components/layout/AppLayout.vue'
 
             <v-card-text class="bg-surface-light pt-4">
               <v-divider class="my-5"> </v-divider>
-              <v-form fast-fail @submit.prevent>
-                <v-text-field label="FirstName" variant="outlined"></v-text-field>
 
-                <v-text-field label="LastName" variant="outlined"></v-text-field>
+              <RegisterForm></RegisterForm>
 
-                <v-text-field label="Email" variant="outlined"></v-text-field>
-
-                <v-text-field label="Password" type="password" variant="outlined"></v-text-field>
-
-                <v-text-field
-                  label="Password Confirmation"
-                  type="password"
-                  variant="outlined"
-                ></v-text-field>
-
-                <v-btn
-                  class="mt-2"
-                  type="submit"
-                  block
-                  color="primary"
-                  prepend-icon="mdi-account-plus"
-                  >Register</v-btn
-                >
-              </v-form>
               <v-divider class="my-5"> </v-divider>
 
               <h5 class="text-center">
