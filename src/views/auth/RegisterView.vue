@@ -25,14 +25,23 @@ function onClick() {
       <v-main>
         <v-container>
           <v-row>
-            <v-col cols="12" md="6" class="mx-auto pt-16">
-              <v-card class="mx-auto" prepend-icon="mdi-login" subtitle="Login" elevation="24">
+            <v-col cols="12" md="6" class="mx-auto">
+              <v-card
+                class="mx-auto"
+                prepend-icon="mdi-account-plus"
+                subtitle="Register"
+                elevation="24"
+              >
                 <template v-slot:title>
                   <span class="font-weight-black">Welcome to Cafezy</span>
                 </template>
 
                 <v-card-text class="bg-surface-light pt-4">
                   <v-form fast-fail @submit.prevent>
+                    <v-text-field label="FirstName" variant="outlined"></v-text-field>
+
+                    <v-text-field label="LastName" variant="outlined"></v-text-field>
+
                     <v-text-field label="Email" variant="outlined"></v-text-field>
 
                     <v-text-field
@@ -41,14 +50,18 @@ function onClick() {
                       variant="outlined"
                     ></v-text-field>
 
+                    <v-text-field
+                      label="Password Confirmation"
+                      type="password"
+                      variant="outlined"
+                    ></v-text-field>
+
                     <v-btn class="mt-2" type="submit" block>Submit</v-btn>
                   </v-form>
-
                   <v-divider class="my-5"> </v-divider>
 
                   <h5 class="text-center">
-                    Don't have a Account?
-                    <RouterLink to="/register">Click here to Register</RouterLink>
+                    Already Have Account? <RouterLink to="/">Click Here to Log-In</RouterLink>
                   </h5>
                 </v-card-text>
               </v-card>
