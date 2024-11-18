@@ -7,7 +7,7 @@ import RegisterForm from '@/components/auth/RegisterForm.vue'
   <AppLayout>
     <template #content
       ><v-row>
-        <v-col cols="12" md="6" class="mx-auto">
+        <v-col cols="12" md="6" class="mx-auto pt-16">
           <v-card class="mx-auto" elevation="24">
             <template #title>
               <h3 class="font-weight-black text-center">Welcome to Cafézy</h3>
