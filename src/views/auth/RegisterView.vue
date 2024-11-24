@@ -10,6 +10,11 @@ import RegisterForm from '@/components/auth/RegisterForm.vue'
         <v-col cols="12" md="6" class="mx-auto pt-16">
           <v-card class="mx-auto" elevation="24">
             <template #title>
+              <v-img
+                class="mx-auto"
+                src="/images/logo-favicon.jpg"
+                :width="mobile ? '75%' : '25%'"
+              ></v-img>
               <h3 class="font-weight-black text-center">Welcome to Cafézy</h3>
               <p class="text-center">Register</p>
             </template>
